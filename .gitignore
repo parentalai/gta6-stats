@@ -1,0 +1,31 @@
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*npsso*
+*secret*
+!**/*secret*.md
+
+# Cloudflare / build
+.wrangler/
+node_modules/
+dist/
+.astro/
+coverage/
+*.log
+
+# Local data dumps (stopgap collector output goes to D1, not git)
+/local-data/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
